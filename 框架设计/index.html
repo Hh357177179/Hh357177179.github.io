@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>框架设计 | 前端规范</title>
+    <meta name="generator" content="VuePress 1.5.3">
+    
+    <meta name="description" content="蛋清科技 前端设计规范">
+    <link rel="preload" href="/Hh357177179.github.io/assets/css/0.styles.1a9d8d01.css" as="style"><link rel="preload" href="/Hh357177179.github.io/assets/js/app.07c5657a.js" as="script"><link rel="preload" href="/Hh357177179.github.io/assets/js/2.8e773197.js" as="script"><link rel="preload" href="/Hh357177179.github.io/assets/js/10.02737f2d.js" as="script"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/11.3f767438.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/12.4489bb9b.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/13.b2e9cd44.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/14.00a7bb60.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/15.a45830b4.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/3.a0219a24.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/4.c619c306.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/5.99bc19bb.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/6.4d91de1c.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/7.2d73e186.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/8.3f64b2cf.js"><link rel="prefetch" href="/Hh357177179.github.io/assets/js/9.ceb74046.js">
+    <link rel="stylesheet" href="/Hh357177179.github.io/assets/css/0.styles.1a9d8d01.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Hh357177179.github.io/" class="home-link router-link-active"><!----> <span class="site-name">前端规范</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/Hh357177179.github.io/%E7%AE%80%E4%BB%8B/" class="sidebar-link">简介</a></li><li><a href="/Hh357177179.github.io/%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/" aria-current="page" class="active sidebar-link">框架设计</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Hh357177179.github.io/%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/#项目结构" class="sidebar-link">项目结构</a></li></ul></li><li><a href="/Hh357177179.github.io/%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/" class="sidebar-link">命名规范</a></li><li><a href="/Hh357177179.github.io/%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/" class="sidebar-link">注释规范</a></li><li><a href="/Hh357177179.github.io/%E7%BB%93%E6%9E%84%E5%B1%82%EF%BC%88html%EF%BC%89%E8%A7%84%E8%8C%83/" class="sidebar-link">结构层（HTML）规范</a></li><li><a href="/Hh357177179.github.io/%E8%A1%A8%E7%A4%BA%E5%B1%82%EF%BC%88css%EF%BC%89%E8%A7%84%E8%8C%83/" class="sidebar-link">表示层（css）规范</a></li><li><a href="/Hh357177179.github.io/%E8%A1%8C%E4%B8%BA%E5%B1%82%EF%BC%88js%EF%BC%89%E8%A7%84%E8%8C%83/" class="sidebar-link">行为层（js）规范</a></li><li><a href="/Hh357177179.github.io/%E5%9B%BE%E7%89%87%E8%A7%84%E8%8C%83/" class="sidebar-link">图片规范</a></li><li><a href="/Hh357177179.github.io/es6%E8%A7%84%E8%8C%83/" class="sidebar-link">es6规范</a></li><li><a href="/Hh357177179.github.io/UI%E7%BB%84%E4%BB%B6%E5%BA%93/" class="sidebar-link">UI组件库</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h2> <div class="language- extra-class"><pre class="language-text"><code>├─build
+├─config
+|  ├─dev.env.js        ----------- 开发环境配置
+|  ├─index.js          ----------- 基础配置
+|  ├─test.env.js       ----------- 测试环境配置
+|  ├─pre.env.js        ----------- 预生产环境配置
+|  ├─pro.env.js        ----------- 生产环境配置
+|
+├─dist
+├─node_modules
+├─src
+|  ├─assets        ----------- 资源
+|  |     ├─iconfont       ----------- 字体图标
+|  |     ├─images         ----------- 图片
+|  |         ├─back       ----------- 背景图片
+|  |         ├─banner     ----------- banner图
+|  |         ├─default    ----------- 默认图片
+|  |         ├─figure     ----------- 配图
+|  |         ├─icon       ----------- 图标
+|  |         ├─logo       ----------- logo
+|  |         ├─nodata     ----------- 无数据图
+|  |         ├─other      ----------- 其他图片
+|  |     ├─sass    ----------- 样式
+|  |         ├─global.scss ---------- 通用样式
+|  |         ├─icon.scss   ---------- 图标样式
+|  |         ├─main.scss   ---------- 项目公共样式
+|  |         ├─reset.scss  ---------- 初始化样式
+|  |         ├─sass_index.scss ------ 样式输出
+|  |         ├─variable.scss  ------- 样式变量
+|  |
+|  ├─components    ----------- 业务组件
+|  ├─router        ----------- 路由
+|  |     ├─index.js       ----------- 路由输出
+|  |     ├─xxx.js         ----------- 模块（与views模块对应）路由索引
+|  |
+|  ├─request       ----------- 请求
+|  |     ├─api.js         ----------- 接口索引
+|  |     ├─index.js       ----------- 异常封装、配置
+|  |
+|  ├─store         ----------- vuex数据状态管理（存储全局变量）
+|  |     ├─actions.js     ----------- 异步更改状态
+|  |     ├─getters.js     ----------- state派生状态
+|  |     ├─index.js       ----------- 输出
+|  |     ├─mutation-types.js -------- 更改状态方法名管理
+|  |     ├─mutation.js    ----------- 更改状态
+|  |     ├─state.js       ----------- 单一状态树
+|  |
+|  ├─utils         ----------- 工具类方法
+|  |     ├─common         ----------- 通用的js
+|  |         ├─index.js   ----------- 统一输出
+|  |         ├─xxx.js     ----------- 具体（例：validate.js 正则校验方法）
+|  |     ├─business       ----------- 业务公共的js
+|  |         ├─index.js   ----------- 统一输出
+|  |         ├─xxx.js     ----------- 具体（例：login.js 登录相关方法）
+|  ├─views/pages   ----------- 视图
+|  |     ├─index.vue      ----------- 项目打开主页面
+|  |     ├─xxx            ----------- xxx模块（例：personal）
+|  |
+|  ├─App.vue
+|  ├─main.js
+|
+├─static           ----------- 静态资源
+├─package.json     ----------- 项目版本号、项目依赖管理
+├─READMe.md        ----------- 项目简介、运行步骤、注意事项
+├─...
+</code></pre></div><br></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Hh357177179.github.io/%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">
+        命名规范
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/Hh357177179.github.io/assets/js/app.07c5657a.js" defer></script><script src="/Hh357177179.github.io/assets/js/2.8e773197.js" defer></script><script src="/Hh357177179.github.io/assets/js/10.02737f2d.js" defer></script>
+  </body>
+</html>
